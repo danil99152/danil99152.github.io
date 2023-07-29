@@ -1,7 +1,6 @@
 import './App.css';
 import Fireworks from "./firework";
 import {useState} from "react";
-import imageSrc from "./assets/certificato.jpg";
 
 function App() {
     const [showImage, setShowImage] = useState(false);
