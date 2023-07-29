@@ -1,6 +1,9 @@
 import './App.css';
 import Fireworks from "./firework";
 import {useState} from "react";
+import { Helmet } from 'react-helmet';
+
+const TITLE = 'Выйграй приз!!!';
 
 function App() {
     const [showImage, setShowImage] = useState(false);
@@ -20,9 +23,14 @@ function App() {
     }
 
   return (
+
       <div className="app" style={{
           backgroundColor: 'darkblue'
       }}>
+          <Helmet>
+              <title>{ TITLE }</title>
+          </Helmet>
+
           <Fireworks />
 
         {
